@@ -1,0 +1,9 @@
+{
+  "files.exclude": {
+    "**/node_modules": true,
+    "**/dist": true,
+    "**/test-results": true,
+    ".cache": true,
+    ".local-mongodb": true
+  }
+}

@@ -1,0 +1,115 @@
+.contact-heading {
+  text-align: center;
+  background: var(--soft);
+  border-bottom: 1px solid var(--line);
+  padding: 58px 0;
+}
+.contact-heading p:not(.eyebrow) {
+  max-width: 540px;
+  margin: 22px auto 0;
+  color: var(--muted);
+  line-height: 1.8;
+}
+.contact-content {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 70px;
+}
+.contact-details h2,
+.contact-self-service h2 {
+  font-family: var(--font-editorial);
+  font-weight: 400;
+  line-height: 1.35;
+}
+.contact-details > p {
+  margin-top: 20px;
+  max-width: 540px;
+}
+.contact-unavailable {
+  padding: 20px;
+  border-inline-start: 3px solid var(--accent);
+  background: var(--soft);
+  font-size: 15px;
+}
+.contact-list {
+  margin-top: 26px;
+}
+.contact-list > div {
+  position: relative;
+  padding: 18px 0 18px 36px;
+  border-bottom: 1px solid var(--line);
+}
+.contact-list svg {
+  position: absolute;
+  inset-inline-start: 0;
+  top: 21px;
+  color: var(--accent);
+}
+.contact-list dt {
+  font-size: 14px;
+  font-weight: 600;
+}
+.contact-list dd {
+  margin: 8px 0 0;
+  color: var(--muted);
+  overflow-wrap: anywhere;
+}
+.contact-list a {
+  color: var(--accent);
+  text-decoration: underline;
+}
+.contact-self-service {
+  padding: 30px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  align-self: start;
+}
+.contact-self-service > svg {
+  color: var(--accent);
+  margin-bottom: 20px;
+}
+.contact-self-service p {
+  color: var(--muted);
+  margin: 18px 0 24px;
+  font-size: 15px;
+}
+.contact-self-service .text-link {
+  margin-top: 18px;
+  display: flex;
+}
+@media (max-width: 800px) {
+  .contact-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .contact-heading {
+    padding: 42px 0;
+  }
+}
+
+.contact-form-panel {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 30px;
+  align-self: start;
+}
+.contact-form-panel h2 {
+  font-family: var(--font-editorial);
+  font-weight: 400;
+}
+.contact-form-panel > p {
+  font-size: 15px;
+  margin: 14px 0 24px;
+}
+.contact-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+@media (max-width: 600px) {
+  .contact-form-panel {
+    padding: 24px 20px;
+  }
+}

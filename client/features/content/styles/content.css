@@ -1,0 +1,69 @@
+.content-body {
+  padding-block: 40px;
+}
+.content-sections {
+  display: grid;
+  gap: 16px;
+  max-width: 820px;
+  margin-inline: auto;
+}
+.content-sections article,
+.content-cards article,
+.join-status,
+.join-form {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 24px;
+}
+.content-sections p,
+.content-cards p,
+.content-detail p {
+  color: var(--muted);
+  line-height: 1.8;
+}
+.content-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+}
+.content-cta {
+  margin-top: 32px;
+  text-align: center;
+}
+.content-tabs {
+  margin-bottom: 24px;
+}
+.content-badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 600;
+}
+.content-detail {
+  max-width: 760px;
+}
+.join-layout {
+  display: grid;
+  gap: 24px;
+  max-width: 820px;
+  margin-inline: auto;
+}
+.join-status {
+  text-align: center;
+}
+.staff-content-list article {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--line);
+}
+.missing-badge {
+  color: var(--danger, #b3261e);
+  font-size: 12px;
+  font-weight: 600;
+}

@@ -1,0 +1,14 @@
+node_modules
+**/node_modules
+client/dist
+.git
+.cache
+.local-mongodb
+backups
+coverage
+test-results
+playwright-report
+.env
+**/.env
+.vscode
+docs/archive

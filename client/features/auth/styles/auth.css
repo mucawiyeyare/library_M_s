@@ -1,0 +1,107 @@
+.auth-screen {
+  display: grid;
+  place-items: center;
+  background: var(--soft);
+  padding: 48px 20px 56px;
+  min-height: 620px;
+}
+.auth-card {
+  width: min(100%, 460px);
+  padding: 32px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  border-radius: 10px;
+  box-shadow: 0 8px 26px #172d2008;
+}
+.auth-mark {
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  margin: 0 auto 18px;
+  border-radius: 9px;
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+.public-header + main .auth-card h1 {
+  font-size: 30px;
+  line-height: 1.3;
+  text-align: center;
+}
+.auth-card > p.muted {
+  font-size: 15px;
+  text-align: center;
+  margin-top: 12px;
+}
+.auth-card .form-stack {
+  margin-top: 26px;
+}
+.auth-card .form-stack > .button {
+  width: 100%;
+  margin-top: 4px;
+}
+.auth-card .auth-switch {
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px solid var(--line);
+  text-align: center;
+  font-size: 14px;
+}
+.auth-card label {
+  font-size: 14px;
+}
+.auth-card input {
+  font-size: 16px;
+}
+.auth-fields {
+  display: grid;
+  gap: 20px;
+}
+.auth-forgot {
+  align-self: end;
+  text-align: end;
+}
+.password-input {
+  display: block;
+  position: relative;
+}
+.form-stack .password-input input {
+  padding-inline-end: 48px;
+}
+.password-toggle {
+  position: absolute;
+  inset-inline-end: 2px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+  border-radius: 6px;
+}
+.password-toggle:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: -3px;
+}
+@media (min-width: 768px) {
+  .auth-card-register {
+    width: min(100%, 720px);
+  }
+  .auth-fields-register {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: start;
+  }
+}
+@media (max-width: 600px) {
+  .auth-screen {
+    padding: 32px 20px;
+    min-height: 560px;
+  }
+  .auth-card {
+    padding: 26px 22px;
+  }
+}
